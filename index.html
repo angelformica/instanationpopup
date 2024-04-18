@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instaNation Popup</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adding Google Fonts for handwritten and sans-serif styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif; /* General text in Montserrat */
+            background: #ffffff; /* White background */
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            color: #262626;
+            font-size: 24px; /* Larger size for the title */
+            font-family: 'Pacifico', cursive; /* Handwritten style font */
+            padding: 10px 0;
+        }
+        .content {
+            padding: 20px 40px 60px 40px;
+            width: 400px; /* Fixed width for the popup */
+            text-align: center;
+            box-sizing: border-box;
+            position: relative; /* Position relative for absolute positioning inside */
+            height: 300px; /* Fixed height for better control of the layout */
+        }
+        button {
+            width: 50%;
+            padding: 10px;
+            position: absolute; /* Position the button absolutely within the content */
+            bottom: 10px; /* Position the button 10px from the bottom */
+            left: 25%; /* Center the button horizontally */
+            border-radius: 5px;
+            background-color: #3897f0; /* Instagram's button color */
+            color: white;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2878c1; /* Darker shade for hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">instaNation</div>
+    <div class="content">
+        <p>Message goes here</p>
+        <button onClick="window.close()">OK</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
